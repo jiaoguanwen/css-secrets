@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>continuous-image-borders</title>
+    <style>
+      div {
+        margin-bottom: 10px;
+        width: 21em;
+        padding: 1em;
+        overflow: hidden;
+        resize: both;
+        font: 100%/1.6 Baskerville, Palatino, serif;
+        border: 1em solid transparent;
+        /* background:
+        linear-gradient(white, white),
+        url(stone-art.jpg);
+      background-size: cover;
+      background-clip: padding-box, border-box;
+      background-origin: border-box; */
+        background: linear-gradient(white, white) padding-box, url(stone-art.jpg) border-box 0 / cover;
+        /* position / size */
+      }
+    </style>
+  </head>
+  <body>
+    <div>This is test text.</div>
+    <img src="stone-art.jpg" alt="" />
+  </body>
+</html>
